@@ -1,0 +1,65 @@
+main{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+main h1{
+	background-color:#50C4ED;
+	font-size: 40px;
+	width: 40%;
+	text-align: center;
+	border-radius: 4px;
+	padding: 5px;
+	box-shadow: 7px 5px 25px -6px rgba(0,0,0,0.74);
+	color: #1E2A78;
+	font-weight: bold;
+}
+.content{
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 80%;	
+}
+
+.content > .course{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #50C4ED;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 7px 5px 25px -6px rgba(0,0,0,0.74);
+	margin: 20px;
+}
+
+.content > .course > .courseInfo{
+	padding-left: 20px;     
+	color: #051475;
+}
+
+.content > .course > .courseInfo > .course-name span{
+	font-weight: bold;
+	background-color: #FCE850;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+.content > .course img{
+	width: 150px;
+	box-shadow: 7px 5px 25px -6px rgba(0,0,0,0.74);
+	border-radius: 4px;
+	background-color: #FFFFFF;
+}
+
+.content > .course > .courseInfo a button{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px;
+	border:3px solid #387ADF;
+	border-radius: 4px;
+	background-color: #FCE850;
+	color: #1E2A78;	
+}

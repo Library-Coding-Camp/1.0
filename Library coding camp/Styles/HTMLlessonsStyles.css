@@ -1,0 +1,39 @@
+.lessons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.lesson{
+	text-align: left;
+	margin: 10px;
+	font-size: 15px;
+	background-color: #50C4ED;
+	border-radius: 4px;
+	width: 90%;
+}
+
+.lesson a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: 0px;
+}
+
+.lesson a:active {
+	color: black;
+}
+
+.lesson:hover{
+	box-shadow: 6px 7px 17px -7px rgba(0,0,0,0.85);
+}
+
+.lesson a i{
+	font-size: 20px;
+	padding-right: 10px;
+}
+.lesson a h2{
+	padding-left: 10px;
+}
+
