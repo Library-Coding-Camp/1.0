@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../Styles/navbarStyles.css">
+		<link rel = "stylesheet" href = "../../Styles/HTMLlessonsStyles/lessonType1.css">
+        <link rel = "stylesheet" href = "../../Styles/HTMLlessonsStyles/HTMLcodebox.css">
+
+	</head>
+	
+	</style>
+	<body>
+		<section class = "navbar">
+			<h3>Library Coding Camp</h3>
+			<nav>
+				<a href = "../../courses.html">Courses</a>
+				<a href = "">Challenges</a>
+				<a href = "">Learn More</a>
+			</nav>
+		</section>
+		
+		<section class = "main-content">
+			<main>
+				<h1 class = "exName">Label Element</h1>
+				<div class = "content">
+					<p class = "text-content">
+						
+					</p>
+				</div>
+				
+				<div class = "practice">
+
+                    <div class = "codeboxarea">
+                    <script>
+                            function updateOutput(value){
+                                document.getElementById('output').innerHTML = value;
+                            }
+			    function showSolution(){
+				document.getElementById('HTMLcodebox').value = "<label for = 'name'>\nName\n<input type = 'text' id = 'name'>\n</label>"
+				updateOutput(document.getElementById('HTMLcodebox').value);
+				
+			    }
+                    </script>
+                    <div class = "runBtn">
+                            <button onClick ="updateOutput(document.getElementById('HTMLcodebox').value)" >Run code</button>
+			    <button onclick ="showSolution()">See Solution</button>
+		    </div>   
+                    <div class = "outputAndEditor">
+                        <div class = "editHTML">
+                            <textarea placeholder = "ADD YOUR HTML HERE" class = "codebox" id = "HTMLcodebox" ></textarea>   
+                        </div>
+                        <div id = "output" ></div>
+                    </div>
+                </div>
+				<div class = "nextButton">
+					<a href = "bulletedList.html">
+						<button class = "goNext">Next</button>
+					</a>
+				</div>
+			</main>
+		</section>
+		
+		<section class = "footer">
+			
+		</section>
+	</body>
+</html>
+
+
