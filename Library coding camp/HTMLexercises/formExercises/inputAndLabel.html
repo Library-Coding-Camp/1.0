@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../Styles/navbarStyles.css">
+		<link rel = "stylesheet" href = "../../Styles/HTMLlessonsStyles/lessonType1.css">
+        <link rel = "stylesheet" href = "../../Styles/HTMLlessonsStyles/HTMLcodebox.css">
+
+	</head>
+	
+	
+	<body>
+		<section class = "navbar">
+			<h3>Library Coding Camp</h3>
+			<nav>
+				<a href = "../../courses.html">Courses</a>
+				<a href = "">Challenges</a>
+				<a href = "">Learn More</a>
+			</nav>
+		</section>
+		
+		<section class = "main-content">
+			<main>
+				<h1 class = "exName">Input element</h1>
+				<div class = "content">
+					<p class = "text-content">
+						The input tag is used to make a textbox and other input
+						related fields. The input tag is a self-closing tag (meaning
+						it does not have a closing tag) and has one (main) attribute, 
+						the type attribute. For now, we will set this attribute to text,
+						since we are expecting a text input.<br>
+						An HTML text box looks like this:
+						<br><br>
+						<input type = "text"><br><br>
+						It is arguably the ugliest default HTML elements. Thankfully, CSS
+						can be used to style it.<br>
+						The HTML to create a textbox is the following:<br><br>
+						&lt;input type = "text"&gt;
+						<br><br>
+						
+						As an exercise, create two textboxes, one for email and
+						one for password. As an extra challenge, on the password field try
+						to change the type attribute to "password" and see the difference
+						when you attempt to type in it.
+						
+						</p>
+				</div>
+				<div class = "practice">
+
+                    <div class = "codeboxarea">
+                    <script>
+                            function updateOutput(value){
+                                document.getElementById('output').innerHTML = value;
+                            }
+			    function showSolution(element){
+				element.value = "<input type = 'text'> \n<input type = 'password'>"
+				
+				updateOutput(document.getElementById('HTMLcodebox').value);
+			    }
+                    </script>
+                    <div class = "runBtn">
+                            <button onClick ="updateOutput(document.getElementById('HTMLcodebox').value)" >Run code</button>
+			    <button onClick ="showSolution(document.getElementById('HTMLcodebox'))">See Solution</button>
+		    </div>   
+                    <div class = "outputAndEditor">
+                        <div class = "editHTML">
+                            <textarea placeholder = "ADD YOUR HTML HERE" class = "codebox" id = "HTMLcodebox" ></textarea>   
+                        </div>
+                        <div id = "output" ></div>
+                    </div>
+                </div>
+                      
+                
+				<!--
+                <div class = "solution">
+                    <button id = "showSolution">Show Solution</button>
+                    <div class = "solution">
+                        &lt;h1&gt;Hello World!&lt;/h1&gt;
+                    <div>
+                </div>
+				-->
+				<div class = "nextButton">
+					<a href = "bulletedList.html">
+						<button class = "goNext">Next</button>
+					</a>
+				</div>
+			</main>
+		</section>
+		
+		<section class = "footer">
+			
+		</section>
+	</body>
+</html>
+
+
